@@ -1,0 +1,4 @@
+
+def square(number):
+    """Return square of number."""
+    return number**2
