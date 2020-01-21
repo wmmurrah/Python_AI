@@ -16,3 +16,7 @@ for i, row in enumerate(a):
     for j, item in enumerate(row):
         print(f'a[{i}][{j}]={item} ', end=' ')
     print()
+
+    a.
+    
+    
