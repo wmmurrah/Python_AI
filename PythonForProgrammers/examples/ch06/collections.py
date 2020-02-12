@@ -7,10 +7,4 @@ numbers |= {2, 3, 4}
 
 numbers.update(range(10))
 
-#%%
-numbers.up
-
-#%%
-print(numbers)
-
-numbers.u
+print(numbers)    
