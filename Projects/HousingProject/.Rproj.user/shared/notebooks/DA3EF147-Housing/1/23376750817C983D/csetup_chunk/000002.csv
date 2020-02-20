@@ -1,0 +1,18 @@
+"0","knitr::opts_chunk$set(echo = TRUE, comment = NULL)"
+"0","library(psych)"
+"0","library(car)"
+"2","Loading required package: carData
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","
+Attaching package: ‘car’
+
+"
+"2","The following object is masked from ‘package:psych’:
+
+    logit
+
+"

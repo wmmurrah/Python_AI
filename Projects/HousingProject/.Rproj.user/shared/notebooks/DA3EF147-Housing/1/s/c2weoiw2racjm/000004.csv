@@ -1,0 +1,3 @@
+"0","describe(housing, fast = TRUE)"
+"2","no non-missing arguments to min; returning Inf"
+"2","no non-missing arguments to max; returning -Inf"

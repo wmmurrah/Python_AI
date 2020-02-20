@@ -1,0 +1,46 @@
+---
+title: "Housing"
+author: "William Murrah"
+date: "1/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NULL)
+library(psych)
+library(car)
+```
+
+
+```{r}
+housing <- read.csv("data/housing/housing.csv", header = TRUE)
+```
+
+```{r}
+head(housing)
+```
+
+```{r}
+str(housing)
+```
+
+```{r}
+describe(housing, fast = TRUE)
+```
+
+```{r}
+num_idx <- sapply(housing, is.numeric)
+par(mfrow = c(length(num_idx) %/% 3, 3))
+
+for( i in seq_along(1:9)) {
+  hist(housing[ ,i], col = "blue", breaks = 'fd', main = names(housing[i]),
+       xlab = NULL)
+       }
+```
+
+## Add ID variable
+
+```{r}
+housing$ID <- with(housing, longitude *1000 + latitude)
+```
+

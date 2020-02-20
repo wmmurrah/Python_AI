@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578231752985.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3805703649",
+    "id" : "3A5EF1F2",
+    "lastKnownWriteTime" : 1578145570,
+    "last_content_update" : 1578145570,
+    "path" : "~/Projects/Learning/Python_AI/handson-ml2/HousingProject/code/load_housing_data.py",
+    "project_path" : "code/load_housing_data.py",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "python"
+}

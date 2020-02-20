@@ -1,0 +1,7 @@
+"0","num_idx <- sapply(housing, is.numeric)"
+"0","par(mfrow = c(length(num_idx) %/% 3, 3))"
+"0",""
+"0","for( i in seq_along(1:9)) {"
+"0","  hist(housing[ ,i], col = ""blue"", breaks = 'fd', main = names(housing[i]),"
+"0","       xlab = NULL)"
+"0","       }"
