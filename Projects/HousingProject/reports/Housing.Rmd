@@ -9,8 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, comment = NULL)
 library(psych)
 library(car)
+library(ggplot2)
 ```
-
 
 ```{r}
 housing <- read.csv("data/housing/housing.csv", header = TRUE)
@@ -32,10 +32,19 @@ describe(housing, fast = TRUE)
 num_idx <- sapply(housing, is.numeric)
 par(mfrow = c(length(num_idx) %/% 3, 3))
 
-for( i in seq_along(1:9)) {
-  hist(housing[ ,i], col = "blue", breaks = 'fd', main = names(housing[i]),
+for (i in seq_along(1:9)) {
+  hist(housing[, i], col = "blue", breaks = "fd", main = names(housing[i]),
        xlab = NULL)
        }
 ```
 
+```{r}
+ggplot(housing, aes(median_income, median_house_value, color = households)) +
+    geom_point(alpha = .4) + facet_grid(ocean_proximity ~ 1)
+```
+
+```{r}
+ggplot(housing, aes(y = latitude, x = longitude, color = median_house_value)) +
+    geom_point(alpha = .25)
+```
 
