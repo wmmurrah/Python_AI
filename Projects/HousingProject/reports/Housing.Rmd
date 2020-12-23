@@ -48,3 +48,15 @@ ggplot(housing, aes(y = latitude, x = longitude, color = median_house_value)) +
     geom_point(alpha = .25)
 ```
 
+```{r}
+# library(leaflet)
+# 
+# leaflet() %>% 
+#   setView(lng = median(housing$longitude), 
+#         lat = median(housing$latitude), zoom = 4.4) %>% 
+#   addTiles() %>% 
+#   addMarkers(lng = housing$longitude, lat = housing$latitude)
+```
+
+
+
