@@ -1,0 +1,16 @@
+# prepare_housing_data.py
+"""
+Prepare housing data for modeling.
+"""
+from zlib import crc32
+import os
+
+import load_housing_data
+
+os.system('code/load_housing_data.py')
+
+housing = load_housing_data()
+
+
+def test_set_check(identifier, test_ratio):
+    return crc32(np.int64(identifier)) & 0xffffffff < test_ratio*2**32

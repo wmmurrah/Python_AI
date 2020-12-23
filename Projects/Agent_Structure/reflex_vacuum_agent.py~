@@ -1,0 +1,7 @@
+# reflex_vacuum_agent.py
+"""From pseudocode on page 49 of 
+AIMA 4"""
+
+def reflex_vacuum_agent(location, status):
+    if status = Dirty:
+        return Suck
