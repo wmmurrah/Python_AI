@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="machine-learning-notebooks">Machine Learning Notebooks</h1>
+<p>This project aims at teaching you the fundamentals of Machine Learning in python. It contains the example code and solutions to the exercises in the second edition of my O’Reilly book <a href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow</a>:</p>
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/51aqYc1QyrL._SX379_BO1,204,203,200_.jpg" title="book" width="150" /></p>
+<p><strong>Note</strong>: If you are looking for the first edition notebooks, check out <a href="https://github.com/ageron/handson-ml">ageron/handson-ml</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="want-to-play-with-these-notebooks-online-without-having-to-install-anything">Want to play with these notebooks online without having to install anything?</h3>
+<p>Use any of the following services.</p>
+<p><strong>WARNING</strong>: Please be aware that these services provide temporary environments: anything you do will be deleted after a while, so make sure you download any data you care about.</p>
+<ul>
+<li><p><strong>Recommended</strong>: open this repository in <a href="https://colab.research.google.com/github/ageron/handson-ml2/blob/master/">Colaboratory</a>: <a href="https://colab.research.google.com/github/ageron/handson-ml2/blob/master/"><img src="https://colab.research.google.com/img/colab_favicon.ico" width="90" /></a></p></li>
+<li><p>Or open it in <a href="https://mybinder.org/v2/gh/ageron/handson-ml2/master">Binder</a>: <a href="https://mybinder.org/v2/gh/ageron/handson-ml2/master"><img src="https://matthiasbussonnier.com/posts/img/binder_logo_128x128.png" width="90" /></a></p>
+<ul>
+<li><em>Note</em>: Most of the time, Binder starts up quickly and works great, but when handson-ml2 is updated, Binder creates a new environment from scratch, and this can take quite some time.</li>
+</ul></li>
+<li><p>Or open it in <a href="https://beta.deepnote.com/launch?template=data-science&amp;url=https%3A//github.com/ageron/handson-ml2/blob/master/index.ipynb">Deepnote</a>: <a href="https://beta.deepnote.com/launch?template=data-science&url=https%3A//github.com/ageron/handson-ml2/blob/master/index.ipynb"><img src="https://www.deepnote.com/static/illustration.png" width="150" /></a></p></li>
+</ul>
+<h3 id="just-want-to-quickly-look-at-some-notebooks-without-executing-any-code">Just want to quickly look at some notebooks, without executing any code?</h3>
+<p>Browse this repository using <a href="https://nbviewer.jupyter.org/github/ageron/handson-ml2/blob/master/index.ipynb">jupyter.org’s notebook viewer</a>: <a href="https://nbviewer.jupyter.org/github/ageron/handson-ml2/blob/master/index.ipynb"><img src="https://jupyter.org/assets/nav_logo.svg" width="150" /></a></p>
+<p><em>Note</em>: <a href="index.ipynb">github.com’s notebook viewer</a> also works but it is slower and the math equations are not always displayed correctly.</p>
+<h3 id="want-to-run-this-project-using-a-docker-image">Want to run this project using a Docker image?</h3>
+<p>Read the <a href="https://github.com/ageron/handson-ml2/tree/master/docker">Docker instructions</a>.</p>
+<h3 id="want-to-install-this-project-on-your-own-machine">Want to install this project on your own machine?</h3>
+<p>Start by installing <a href="https://www.anaconda.com/distribution/">Anaconda</a> (or <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>), <a href="https://git-scm.com/downloads">git</a>, and if you have a TensorFlow-compatible GPU, install the <a href="https://www.nvidia.com/Download/index.aspx">GPU driver</a>.</p>
+<p>Next, clone this project by opening a terminal and typing the following commands (do not type the first <code>$</code> signs on each line, they just indicate that these are terminal commands):</p>
+<pre><code>$ git clone https://github.com/ageron/handson-ml2.git
+$ cd handson-ml2</code></pre>
+<p>If you want to use a GPU, then edit <code>environment.yml</code> (or <code>environment-windows.yml</code> on Windows) and replace <code>tensorflow=2.0.0</code> with <code>tensorflow-gpu=2.0.0</code>. Also replace <code>tensorflow-serving-api==2.0.0</code> with <code>tensorflow-serving-api-gpu==2.0.0</code>.</p>
+<p>Next, run the following commands:</p>
+<pre><code>$ conda env create -f environment.yml # or environment-windows.yml on Windows
+$ conda activate tf2
+$ python -m ipykernel install --user --name=python3</code></pre>
+<p>Then if you’re on Windows, run the following command:</p>
+<pre><code>$ pip install --no-index -f https://github.com/Kojoley/atari-py/releases atari_py</code></pre>
+<p>Finally, start Jupyter:</p>
+<pre><code>$ jupyter notebook</code></pre>
+<p>If you need further instructions, read the <a href="INSTALL.md">detailed installation instructions</a>.</p>
+<h2 id="contributors">Contributors</h2>
+<p>I would like to thank everyone who contributed to this project, either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Haesun Park who helped on some of the exercise solutions, and to Steven Bunkley and Ziembla who created the <code>docker</code> directory.</p>
+
+</body>
+</html>

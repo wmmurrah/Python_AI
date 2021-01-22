@@ -8,8 +8,8 @@ fetch_housing_data <- function(housing_url = HOUSING_URL,
                                dest_folder = HOUSING_PATH,
                                tarfilename =TARFILENAME) {
   # Download and unpack 1990 California Housing Prices data
-  dir.create(HOUSING_PATH, 
-                                                                 recursive = TRUE)
+  dir.create(HOUSING_PATH,
+             recursive = TRUE)
     download.file(url = housing_url, 
                   destfile = paste0(HOUSING_PATH, 
                                     tarfilename))
