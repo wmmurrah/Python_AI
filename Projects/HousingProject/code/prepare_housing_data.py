@@ -47,6 +47,7 @@ for train_index, test_index in split.split(housing, housing["income_cat"]):
     strat_test_set = housing.loc[test_index]
 
 
+
 for set_ in (strat_train_set, strat_test_set):
     set_.drop("income_cat", axis=1, inplace=True)
 

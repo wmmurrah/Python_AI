@@ -1,0 +1,45 @@
+\documentclass[12 pt,a4paper]{article}
+    \usepackage{xcolor}
+    \definecolor{vertforet}{RGB}{153,202,67}
+    \definecolor{vert}{RGB}{0,172,95}
+    \definecolor{bleu}{RGB}{7,196,234}
+    \definecolor{Orange}{RGB}{245,178,31}
+    \definecolor{Rose}{RGB}{238,28,131}
+    \definecolor{Gray}{RGB}{109,119,125}
+
+
+    \usepackage{graphicx}
+    \usepackage{pgf,tikz}
+    \usetikzlibrary{shapes,arrows,chains,trees,calc,positioning}
+
+    %-=-=-=-=-=-=-=-=
+    \begin{document}
+    %-=-=-=-=-=-=-=-=
+
+    \begin{tikzpicture}[every node/.style={white}]
+       \filldraw[Gray](0.2,3.7) circle(0.8) ;
+    \node[white] at(0.2,3.7){1};
+    \filldraw[vertforet](-2,2) circle(1.2)node{2} ;
+    \filldraw[Gray](4.6,1.3) circle(0.8)node{3} ;
+    \filldraw[vert](-5.4,1.1) circle(0.6) node{4};
+    \filldraw[bleu](1.3,2.3) circle(0.6)node{5} ;
+    \filldraw[Rose](-2.7,-0.5) circle(0.4) node{6};
+    \filldraw[bleu](1.3,0.3) circle(0.4) node{7};
+    \filldraw[Rose](3,1) circle(0.6)node{8};
+    \filldraw[Gray](-3,4.7) circle(0.6) node{9};
+    \filldraw[Orange](-5.3,3.7) circle(0.5) node{10};
+    \filldraw[Rose](3.5,-1.5) circle(0.4) node{11};
+    \filldraw[vert](6,-0.25) circle(0.4) node{6};
+    \filldraw[Orange](4.7,-1) circle(0.4) node{12};
+    \filldraw[vert](3.5,-1.5) circle(0.5) node{13};
+    \path[draw=Gray,line width=4 pt](7,-1.5)to[bend left] (-6.5,1);
+     \path[draw=Gray,line width=4 pt](0.3,-5.5)to[bend right] (-1.5,-0.5) to(-5.2,3.2);
+    \path[draw=Gray,line width=4 pt] (-0.5,-1.5) to (0.8,1.7);
+    \path[draw=Gray,line width =4 pt](-1.5,-0.5)--(-0.8,1.2);
+    \path[draw=Gray,line width =4 pt](-0.8,1.2)--(-0.3,2.4);
+    \path[draw=Gray,line width=4 pt] (0.7,-4.5) to[bend left] (1.7,-1.5);
+\path[draw=Gray,line width=4 pt] (1.7,-1.5) to[bend left] (5.6,-0.25);
+\path[draw=Gray,line width=4 pt] (1.7,-1.5) to(1.3,-.1);
+    \end{tikzpicture}
+
+    \end{document}
