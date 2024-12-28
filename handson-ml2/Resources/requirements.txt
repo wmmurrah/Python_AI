@@ -82,7 +82,7 @@ nbdime==1.1.0
 
 # May be useful with Pandas for complex "where" clauses (e.g., Pandas
 # tutorial).
-numexpr==2.7.0
+numexpr==2.8.5
 
 # Optional: these libraries can be useful in the classification chapter,
 # exercise 4.
